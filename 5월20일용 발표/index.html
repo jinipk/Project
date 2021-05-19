@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>세렝게티 동물 테스트</title>
-    <meta name="description" content="나랑 꼭 닮은 세렝게티 동물을 MBTI를 기반으로 추천해주는 테스트입니다.">
+    <title>나에게 맞는 데스크탑 사양 추천</title>
+    <meta name="description" content="사용자에게 알맞는 데스크탑을 추천해주는 웹페이지입니다.">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="세렝게티 동물 테스트">
-    <meta property="og:description" content="나랑 꼭 닮은 세렝게티 동물을 MBTI를 기반으로 추천해주는 테스트입니다.">
+    <meta property="og:title" content="나에게 맞는 데스크탑 사양 추천">
+    <meta property="og:description" content="사용자에게 알맞는 데스크탑을 추천해주는 웹페이지입니다.">
     <meta property="og:image" content="https://serengeti.netlify.app/img/likelion-logo.png">
     <meta property="og:url" content="https://serengeti.netlify.app/">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -16,15 +16,11 @@
 </head>
 <body class="container">
     <article class="start">
-        <h1 class="main-title mt-5 text-center">세렝게티 동물 테스트</h1>
-        <h2 class="sub-title mt-3 text-center">21년 진짜 새 삶 산다! 나는 어떻게 계획을 세우는 타입일까?</h1>
-        <img class="updown-slash mt-5" src="img/up-slash.png" alt="up-slash">
-        <div class="start-cover mt-3 mb-3">
-            <img class="mr-3" src="img/double-slash-left.png" alt="double-slash-left">
-            <button type="button" class="btn-start btn btn-primary" onclick='start();'>세렝게티 동물로 알아보기</button>
-            <img class="ml-3" src="img/double-slash-right.png" alt="double-slash-right">
-        </div>
-        <img class="updown-slash" src="img/down-slash.png" alt="up-slash">
+        <article class="start">
+            <h1 class="mt-5 text-center">나에게 맞는 컴퓨터 찾기!</h1>
+            <img id="img2" class="rounded-circle mt-5" src="img/main_img2.jpg" alt="animal">
+            <button type="button" class="btn-start btn btn-primary mt-5" onclick='start();'>START!</button>
+        </article>
     </article>
     <article class="question">
         <div class="progress mt-5">
@@ -44,7 +40,7 @@
         <img class="updown-slash mt-5" src="img/dark-slash.png" alt="dark-slash">
         <span class="result-message mt-4 mb-4">나에게 딱 맞는 사양 추천 결과!</span>
         <img class="updown-slash" src="img/up-slash.png" alt="up-slash">
-        <img id="img" class="rounded-circle mt-5" src="img/lion.png" alt="animal">
+        <img id="img" class="mt-5" src="img/lion.png" alt="animal">
         <h2 id="animal" class="result-animal text-center mt-4 mb-4">사양추천</h2>
         <img class="updown-slash" src="img/down-slash.png" alt="down-slash">
         <h3 id="explain" class="result-explain text-center mt-4">설명</h3>
@@ -88,9 +84,10 @@
             // 11: {"title": "친구가 이직에 대한 고민을 하고 있다! 다른 사람의 계획에 있어 당신의 반응은?", "type": "TF", "A": "그럼 이렇게 해보는 건 어때? 계획들에 대한 분석적으로 살펴보고 다양한 의견을 준다", "B": "아 진짜? 그런 고민 왜 혼자 하고 있었어! 그동안 안힘들었어? 라고 위로하며 공감한다."},
             // 12: {"title": "2021년 내 목표는 자기개발, 나는 어떤식으로 자기개발하는 스타일일까?", "type": "JP", "A": "우선 기초 이론부터 차근차근 배워서 성장해나가고 싶어! 커리큘럼을 보고 꼼꼼하게 공부 계획을 세워서 수강한다.", "B": "시도를 해봐야 내가 어떤 유형에 맞는 지 확인 가능하다고 생각하기 때문에 강의를 수강해본다"}
         }
+        
         var result = {
-            "SQDH": {"animal": "예술계의 미래! 높은 사양의 그래픽을 다뤄야 하는 당신에게 추천합니다! <br><strong>포토샵/일러스트레이션 작업용 데스크탑</strong></br>", "explain": "이런 CPU, 이런 램카드를 이용해서 고사양 프로그램도 잘 돌아갑니다! 또한 가벼운 문서작업을 위해서 한글/어도비 프로그램을 추천해요!", "img": "hippo.png"},
-            "SEDH": {"animal": "진정한 공돌이를 위햐여! 높은 사양의 건축 프로그램이나 코딩 프로그램을 다뤄야하는 당신에게 추천합니다! <br><strong>포토샵/일러스트레이션 작업용 데스크탑</strong></br>", "explain": "높은 사양의 CPU, RAM을 이용해서 고사양 프로그램도 잘 돌아갑니다! 또한 가벼운 문서작업을 위해 한글/어도비와 같은 문서 프로그램을 추천해요!", "img": "owl.png"},
+            "SQDH": {"animal": "예술계의 미래! 높은 사양의 그래픽을 다뤄야 하는 당신에게 추천합니다! <br><strong>포토샵/일러스트레이션 작업용 데스크탑</strong></br>", "explain": " <ul><li>라이젠5-3세대 3500X</li><li>삼성전자DDR 16G</li><li>ASUS PRIME A320M-K</li><il>GTX 1030 D5 2GB</il><il>키오시아 EXCERIA (240G)</il></ul>", "img": "artist.png"},
+            "SEDH": {"animal": "진정한 공돌이를 위하여! 높은 사양의 건축 프로그램이나 코딩 프로그램을 다뤄야하는 당신에게 추천합니다! <br><strong>코딩용/건축 프로그램 작업용 데스크탑</strong></br>", "explain": "<ul><li>인텔 i5-5세대</li><li>삼성전자DDR4 8G</li><li>ASUS PRIME B550M-K 대원CTS</li><il>ASUS 지포스 GT710 SL D5 2GB</il><il>ADATA XPG SX6000 Pro M.2 NVMe (512GB)</il></ul>", "img": "programmer.png"},
             // "INFJ": {"animal": "계획적으로 생활하는 것이 곧 삶의 기쁨 스케쥴러 <strong>물소</strong>", "explain": "첫 만남에 맘에 드는 상대를 발견하고 결혼까지 생각하는 당신은 일을 진행하면서 계속해서 미래를 상상하고 자극받는 걸 좋아해요. 모든 일에는 이유와 의미가 있다고 생각하는 당신! 그만큼 다 중요하다고 생각하기 때문에 허투루 일을 하는 사람이 아니에요. 그래서 더 목표를 중요하게 여겨요. 계획에는 어떠한 목표가 있는지 확인하고 맞는 계획을 세워 이뤄나가려해요. 완벽한 계획을 추구해요. 그만큼 추진력도 강해 주변에서 믿음직한 사람이라고 많이 들어요.", "img": "buffalo.png"},
             // "INTJ": {"animal": "치타는 다 계획이 있구나.. 이 모든 것은 나의 큰 그림! 선구자 <strong>치타</strong>", "explain": "연애 상담을 하다보면 결혼과 출산까지 염두해서 조언을 해주는 당신은 나무보다 숲, 아니 달에서 우주 저만리까지 보는 사람이에요. 큰틀을 우선적으로 생각하다보니 꿈꾸는 목표치가 점점 높아지고, 불어나는 계획들을 자각하지 못하다 다시 돌아가기도 해요. 하지만, 이 모든 건 내 목표를 이루어나가기 위한 것! 들어가는 시간이 곧 '투자'라고 생각하기 때문에 해결책을 찾아 실행해요. 미래를 낙관적으로 판단하는 성향이 있기 때문에 보다 더 강하게 목표를 향해 달려나가려 노력해요.", "img": "cheetah.png"},
             // "ISTP": {"animal": "계획은 계획일 뿐. 목표가 확실하면 된다!  상황에 따라 움직이는 유연한 <strong>나무늘보</strong>", "explain": "안드로이드급의 무표정으로 느긋하게 있는 것처럼 보이지만 언제든지 다른 방향으로 움직일 수 있도록 머리에서 이미 계산을 다 굴리고 있어요. 이미 세워진 계획이 있더라도 목표를 더 잘 달성하기 위해서라면 다 뒤집더라도 다시 할 수 있는 용기를 가지고 있어요. 꽂힌 일은 사막에서 바늘찾는 일을 하는 것처럼 꼼꼼하게하지만 그렇지 않으면 손에서 놓아버리는 과감함도 가지고 있어요. 하지만 때로는 생각만 과감하고 행동은 뜨뜻미지근한 경우가 있어 이상과 현실의 괴리감에 빠지기도 해요.", "img": "sloth.png"},

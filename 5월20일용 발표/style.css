@@ -2,7 +2,7 @@
 body {
     background-color: #1f1f1f;
     color: #ffffff;
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumSquare', sans-serif !important;
 }
 article {
     display: flex;
@@ -13,12 +13,25 @@ article {
     font-size: 12px;
     color: #7c7c7c;
 }
+ul{
+    margin: 0 auto;
+    list-style:none;
+    padding-left:0px;
+    font-size: 20px;
+}
 
 /* 시작화면 */
+
+#img2 {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
 .question {
     display: none;
 }
-.main-title {
+/* .main-title {
     font-size: 14px;
     color: #7c7c7c;
 }
@@ -26,6 +39,14 @@ article {
     font-size: 24px;
     font-weight: 100;
     color: #ebebeb;
+} */
+.btn-start {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 16px;
+    color:ffffff;
+    background-color: #0f4c81;
+    border:#ffffff;
 }
 .updown-slash {
     width: 166px;
@@ -111,14 +132,15 @@ article {
     font-weight: 100;
 }
 .result-animal {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 100;
     color: #ebebeb;
 }
 .result-explain {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: normal;
     color: #ff9300;
+   
 }
 .share-message {
     margin: 0 auto;
@@ -131,8 +153,9 @@ article {
 }
 #img {
     width: 300px;
-    height: 300px;
+    height: 450px;
     margin: 0 auto;
+    filter: drop-shadow(0px 0px 5px #ffff);
 }
 .share {
     margin: 0 auto;
