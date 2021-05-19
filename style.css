@@ -1,8 +1,54 @@
+
+/*전체*/
+
+body {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    font-family: 'NanumSquare', sans-serif !important; /*폰트 삽입*/
+    
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+.copyright-text {
+    font-family: "Noto Sans KR";
+    font-size: 12px;
+    color: #7c7c7c;
+}
+
 article {
     display: flex;
     flex-direction: column;
 }
 
+
+/*시작화면*/
+
 .question {
     display: none;
+}
+
+
+
+/*결과 화면*/
+.result {
+    display: none;
+}
+
+#img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.btn-start {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 16px;
+    color:ffffff;
+    background-color: #0f4c81;
+    border:#ffffff;
 }
