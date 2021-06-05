@@ -52,14 +52,16 @@
         }
         var result = {
             "CEG": {"work": "가벼운 문서 작업을 원하시는 분께 추천합니다. <br><strong>문서작업에 최적화 된 가성비 사무용 데스크탑!</br></stronng>", "explain": "<ul><li>인텔 i3-10세대</li><li>삼성전자DDR4 8G</li><li>MSI H410M-A PRO</li><il>내장 기본 VGA</il><il>ADARAUltimate SU655 (240G)</il></ul>", "img": "lion.jpg"},
-            "CFG": {"work": "가성비 가격으로 전문 프로그램을 돌리길 원하시는 분께 추천 드립니다!", "explain": "부엉이 설명", "img": "lion.jpg"},
-            "CEH": {"work": "가성비 가격으로 게임과 같이 사양 높은 데스크탑을 원하시는 분께 추천 드립니다! ", "explain": "물소 설명", "img": "lion.jpg"},
-            "CFH": {"work": "가성비 가격으로 ", "explain": "치타 설명", "img": "lion.jpg"},
-            "DEG": {"work": "나무늘보", "explain": "나무늘보 설명", "img": "lion.jpg"},
-            "DFG": {"work": "거북이", "explain": "거북이 설명", "img": "lion.jpg"},
-            "DEH": {"work": "코끼리", "explain": "코끼리 설명", "img": "lion.jpg"},
-            "DFH": {"work": "침팬지", "explain": "침팬지 설명", "img": "lion.jpg"}
+            "CFG": {"work": "전문 프로그램이 돌아가는 가성비 좋은 데스크탑을 원하시는 분께 추천합니다. <br><strong>무거운 프로그램에도 끄떡 없는 비즈니스 데스크탑!</br></stronng>", "explain": "부엉이 설명", "img": "lion.jpg"},
+            "CEH": {"work": "가성비 챙겨! 성능 챙겨! 가성비 게이밍 데스크탑을 원하신는 분께 추천합니다.<br><strong>낮은 가격대에도 게임이 잘 돌아가는 게이밍용 데스크탑!</br></stronng>", "explain": "", "img": "lion.jpg"},
+            "CFH": {"work": "적은 가격으로 원하는 성능만 확실히 챙겨가자! 주어진 예산에서 좋은 사양을 원하시는 분께 추천합니다. <br><strong>이 가격에 이 사양 이정도면 나쁘지 않아, 아니 오히려 좋아 못하는 게 없는 가성비 데스크탑!</br></stronng>", "explain": "치타 설명", "img": "lion.jpg"},
+            "DEG": {"work": "가격 상관 없이 가볍게 쓰기 좋은, 사무 작업을 원하시는 분께 추천합니다. <br><strong>회사 돈으로 맞추기에 딱인 비싸고 가벼운 데스크탑!</strong></br>", "explain": "나무늘보 설명", "img": "lion.jpg"},
+            "DFG": {"work": "고사양의 작업을 원하거나, 고사양의 게임을 원하시는 분께 추천합니다. <br><strong>CS6, AL 작업? 배틀그라운드? 최고사양으로 즐겨주지, 그래픽 쩌는 데스크탑!</strong></br>", "explain": "거북이 설명", "img": "lion.jpg"},
+            "DEH": {"work": "다른 것보다 컴퓨터 용량에 가장 신경을 많이 쓰시는 분께 추천합니다. <br><strong>써도 써도 끝이 없다! 하드디스크 남아도는 데스크탑!</strong></br>", "explain": "코끼리 설명", "img": "lion.jpg"},
+            "DFH": {"work": "최신 사양, 최신 그래픽. 완전한 데스크탑을 원하시는 분께 추천합니다. <br><strong>안 돌아가는 게임과 프로그램 같은건 없다. 데스크탑 FLEX!</strong></br>", "explain": "침팬지 설명", "img": "lion.jpg"}
         }
+        // <br><strong></strong></br>
+
         function start() {
             $(".start").hide();
             $(".question").show();
@@ -87,7 +89,7 @@
                 $("#work").html(result[mbti]["work"]);
                 $("#explain").html(result[mbti]["explain"]);
             } else {
-                $(".progress-bar").attr('style','width: calc(100/12*'+num+'%)');
+                $(".progress-bar").attr('style','width: calc(100/9*'+num+'%)');
                 $("#title").html(q[num]["title"]);
                 $("#type").val(q[num]["type"]);
                 $("#A").html(q[num]["A"]);
