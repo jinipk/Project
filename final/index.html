@@ -54,7 +54,7 @@
             "CEG": {"work": "가벼운 문서 작업을 원하시는 분께 추천합니다. <br><strong>문서작업에 최적화 된 가성비 사무용 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠3-2세대 피카소 3200G</li><li>삼성전자 DDR4-3200 (8GB) PC4-25600</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>내장 기본 VGA</il><il>마이크론 Crucial MX500 대원CTS (250GB)</il></ul>", "img": "lion.jpg"},
             "CFG": {"work": "전문 프로그램이 돌아가는 가성비 좋은 데스크탑을 원하시는 분께 추천합니다. <br><strong>무거운 프로그램에도 끄떡 없는 비즈니스 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠5-3세대 마티스 3600</li><li>삼성전자 DDR4-3200 (8GB) PC4-25600 *2</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>ASUS CERBERUS 지포스 GTX1050 Ti O4G D5 4GB</il><il>마이크론 Crucial P5 M.2 NVMe 아스크텍 (500GB)</il></ul>", "img": "lion.jpg"},
             "CEH": {"work": "가성비 챙겨! 성능 챙겨! 가성비 게이밍 데스크탑을 원하신는 분께 추천합니다.<br><strong>낮은 가격대에도 게임이 잘 돌아가는 게이밍용 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠 5-3세대 3500</li><li>삼성전자 DDR4-2666 (16GB) PC4-21300</li><li>ASUS PRIME A320M-K 대원CTS</li><il>MSI 지포스 GTX 1650 벤투스 S V1 OC D6 4GB</il><il>마이크론 Crucial MX500 대원CTS (500GB)</il></ul>", "img": "lion.jpg"},
-            "CFH": {"work": "적은 가격으로 원하는 성능만 확실히 챙겨가자! 주어진 예산에서 좋은 사양을 원하시는 분께 추천합니다. <br><strong>이 가격에 이 사양 이정도면 나쁘지 않아, 아니 오히려 좋아 못하는 게 없는 가성비 데스크탑!</br></stronng>", "explain": "치타 설명", "img": "lion.jpg"},
+            "CFH": {"work": "적은 가격으로 원하는 성능만 확실히 챙겨가자! 주어진 예산에서 좋은 사양을 원하시는 분께 추천합니다. <br><strong>이 가격에 이 사양 이정도면 나쁘지 않아, 아니 오히려 좋아 못하는 게 없는 가성비 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠5-3세대 3500</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>ASUS CERBERUS 지포스 GTX1050 Ti O4G D5 4GB</il><il>WD BLUE 3D SSD 250GB</il></ul>", "img": "lion.jpg"},
             "DEG": {"work": "가격 상관 없이 가볍게 쓰기 좋은, 사무 작업을 원하시는 분께 추천합니다. <br><strong>회사 돈으로 맞추기에 딱인 비싸고 가벼운 데스크탑!</strong></br>", "explain": "<ul><li>AMD 라이젠5-3세대 마티스 3600</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS PRIME H510M-K</li><il>내장 기본 VGA</il><il>마이크론 Crucial MX500 대원CTS (500GB)</il></ul>", "img": "lion.jpg"},
             "DFG": {"work": "고사양의 작업을 원하거나, 고사양의 게임을 원하시는 분께 추천합니다. <br><strong>CS6, AL 작업? 배틀그라운드? 최고사양으로 즐겨주지, 그래픽 쩌는 데스크탑!</strong></br>", "explain": "<ul><li>인텔 코어i3-10세대 10100F 코멧레이크S</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS PRIME H410M-K</li><il>ASUS PH 지포스 GTX 1650 O4G D5 4GB</il><il>SSD:마이크론 Crucial MX500 대원CTS (250GB) <br> HDD:(WD) 1TB BLUE WD10EZEX SATA3/7200/64M /HDD</il></ul>", "img": "lion.jpg"},
             "DEH": {"work": "다른 것보다 컴퓨터 용량에 가장 신경을 많이 쓰시는 분께 추천합니다. <br><strong>써도 써도 끝이 없다! 하드디스크 남아도는 데스크탑!</strong></br>", "explain": "<ul><li>인텔 코어i5-10세대 10400F 코멧레이크S</li><li>삼성전자 DDR4-3200 (16GB) PC4-25600</li><li>ASUS PRIME H410M-K</li><il>MSI 지포스 GTX 1650 벤투스 S V1 OC D6 4GB</il><il>SSD:마이크론 Crucial MX500 대원CTS (1TB) <br> HDD:Seagate 2TB BarraCuda ST2000DM008", "img": "lion.jpg"},
@@ -84,7 +84,6 @@
                 ($("#CD").val() < 2) ? mbti+="D" : mbti+="C";
                 ($("#EF").val() < 2) ? mbti+="F" : mbti+="E";
                 ($("#GH").val() < 2) ? mbti+="H" : mbti+="G";
-                alert(mbti);
                 $("#img").attr("src",result[mbti]["img"]);
                 $("#work").html(result[mbti]["work"]);
                 $("#explain").html(result[mbti]["explain"]);
