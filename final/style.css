@@ -123,7 +123,7 @@ ul {
 }
 .question-content {
   font-size: 20px;
-  color: #00d9ff;
+  color: #5CD1E5;
 }
 .rectangle {
   width: 288px;
@@ -140,7 +140,7 @@ ul {
 
 /* 결과 화면 */
 .result-message {
-  color: #00d9ff;
+  color: #5CD1E5;
   margin: 0 auto;
   font-size: 20px;
   font-weight: 100;
@@ -153,7 +153,7 @@ ul {
 .result-explain {
   font-size: 18px;
   font-weight: normal;
-  color: #0f4c81;
+  color: #5CD1E5;
 }
 .share-message {
   margin: 0 auto;
