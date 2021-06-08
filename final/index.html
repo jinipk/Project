@@ -33,6 +33,7 @@
         <img class="updown-slash" src="img/up-slash.png" alt="up-slash">
         <h2 id="work" class="result-work text-center mt-4 mb-4">사양추천</h2>
         <h3 id="explain" class="result-explain text-center mt-4">설명</h3>
+        <button id="a" type="button" class="btn-start tbtn btn-primary mt-5"><a href="#" target="_blank"><b>견적 보러 바로가기!</b></a></button>
         <div class="rectangle mt-4 mb-4"></div>
         <span class="share-message mb-4">나에게 맞는 사양 <strong>공유하기</strong></span>
         <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="share addthis_inline_share_toolbox"></div>
@@ -46,24 +47,24 @@
         var num = 1;
         var q = {
             1: {"title": "데스크탑을 놓을 장소는?", "type": "CD", "A": "재택근무, 비대면 수업을 하고있습니다! 집", "B": "사무실에서 쓸 데스크탑이에요! 회사"},
-            2: {"title": "최신 유행을 놓칠 수 없는 얼리어답터신가요?", "type": "CD", "A": "새로 나온 하드웨어와 상관 없이 적당한 가격과 적당한 품질의 하드웨어가 좋아요!", "B": "완벽히 얼리어답터! 최신 하드웨어들을 사용해야 직성이 풀려요."},
+            2: {"title": "최신 유행을 놓칠 수 없는 얼리어답터신가요?", "type": "CD", "A": "새로 나온 하드웨어와 상관 없이<br>적당한 가격과 적당한 품질의 하드웨어가 좋아요!", "B": "완벽히 얼리어답터!<br>최신 하드웨어들을 사용해야 직성이 풀려요."},
             3: {"title": "그림 관련 작업을 하나요?", "type": "EF", "A": "포토샵, 일러스트레이터로 작업해요.", "B": "3D 프로그램을 사용하고, 랜더링과 같은 작업을 해야해요."},
-            4: {"title": "영상 매체는 어떻게 다루는 편인가요?", "type": "EF", "A": "인터넷 강의나 스트리밍(youtube, netflix, watcha, tving)사이트만 사용하는 편이예요.", "B": "영상을 찍어서 올리거나, 편집을 하기도 해요."},
-            5: {"title": "코딩을 배우실 의향이 있나요?", "type": "EF", "A": "가볍게만 해보고 싶어요.", "B": "코딩 관련 업무를 하고 있고, 직접적으로 데이터 베이스 구축, 서버 열기 등의 일을 할거예요."},
+            4: {"title": "영상 매체는 어떻게 다루는 편인가요?", "type": "EF", "A": "인터넷 강의나 스트리밍(youtube, netflix, watcha, tving)<br>사이트만 사용하는 편이예요.", "B": "영상을 찍어서 올리거나, 편집을 하기도 해요."},
+            5: {"title": "코딩을 배우실 의향이 있나요?", "type": "EF", "A": "가볍게만 해보고 싶어요.", "B": "코딩 관련 업무를 하고 있고, 직접적으로 데이터 베이스 구축,<br>서버 열기 등의 일을 할거예요."},
             6: {"title": "파일 보관은 어떤 식으로 하시나요?", "type": "GH", "A": "외장하드에 넣어서 백업하는 편이에요.", "B": "그냥 컴퓨터에 다 쏟아 부어놓는 편이에요."},
-            7: {"title": "어떤 종류의 게임을 좋아하시나요?", "type": "GH", "A": "시스템 내장 게임 카드놀이, 스파이더 게임 정도면 충분해요!", "B": "MMORPG, 배틀그라운드와 같이 높은 사양의 게임을 즐기고싶어요."},
+            7: {"title": "어떤 종류의 게임을 좋아하시나요?", "type": "GH", "A": "시스템 내장 게임 카드놀이, 스파이더 게임 정도면 충분해요!", "B": "MMORPG, 배틀그라운드와 같이<br>높은 사양의 게임을 즐기고싶어요."},
             8: {"title": "용량은 어느정도? ", "type": "GH", "A": "적당히 필요한 만큼만 있어도 OK!", "B": "많으면 많을수록 좋아요!"},
             9: {"title": "생각하는 가격대는?", "type": "CD", "A": "100만원 이하로 생각 중!", "B": "가격은 얼마가 들어도 상관 없어요!"}
         }
         var result = {
-            "CEG": {"work": "가벼운 문서 작업을 원하시는 분께 추천합니다. <br><strong>문서작업에 최적화 된 가성비 사무용 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠3-2세대 피카소 3200G</li><li>삼성전자 DDR4-3200 (8GB) PC4-25600</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>내장 기본 VGA</il><br><il>마이크론 Crucial MX500 대원CTS (250GB)</il></ul>", "img": "lion.jpg"},
-            "CFG": {"work": "전문 프로그램이 돌아가는 가성비 좋은 데스크탑을 원하시는 분께 추천합니다. <br><strong>무거운 프로그램에도 끄떡 없는 비즈니스 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠5-3세대 마티스 3600</li><li>삼성전자 DDR4-3200 (8GB) PC4-25600 *2</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>ASUS CERBERUS 지포스 GTX1050 Ti O4G D5 4GB</il<br>><il>마이크론 Crucial P5 M.2 NVMe 아스크텍 (500GB)</il></ul>", "img": "lion.jpg"},
-            "CEH": {"work": "가성비 챙겨! 성능 챙겨! 가성비 게이밍 데스크탑을 원하신는 분께 추천합니다.<br><strong>낮은 가격대에도 게임이 잘 돌아가는 게이밍용 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠 5-3세대 3500</li><li>삼성전자 DDR4-2666 (16GB) PC4-21300</li><li>ASUS PRIME A320M-K 대원CTS</li><il>MSI 지포스 GTX 1650 벤투스 S V1 OC D6 4GB</il><br><il>마이크론 Crucial MX500 대원CTS (500GB)</il></ul>", "img": "lion.jpg"},
-            "CFH": {"work": "적은 가격으로 원하는 성능만 확실히 챙겨가자! 주어진 예산에서 좋은 사양을 원하시는 분께 추천합니다. <br><strong>이 가격에 이 사양 이정도면 나쁘지 않아, 아니 오히려 좋아 못하는 게 없는 가성비 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠5-3세대 3500</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>ASUS CERBERUS 지포스 GTX1050 Ti O4G D5 4GB</il><br><il>WD BLUE 3D SSD 250GB</il></ul>", "img": "lion.jpg"},
-            "DEG": {"work": "가격 상관 없이 가볍게 쓰기 좋은, 사무 작업을 원하시는 분께 추천합니다. <br><strong>회사 돈으로 맞추기에 딱인 비싸고 가벼운 데스크탑!</strong></br>", "explain": "<ul><li>AMD 라이젠5-3세대 마티스 3600</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS PRIME H510M-K</li><il>내장 기본 VGA</il><br><il>마이크론 Crucial MX500 대원CTS (500GB)</il></ul>", "img": "lion.jpg"},
-            "DFG": {"work": "고사양의 작업을 원하거나, 고사양의 게임을 원하시는 분께 추천합니다. <br><strong>CS6, AL 작업? 배틀그라운드? 최고사양으로 즐겨주지, 그래픽 쩌는 데스크탑!</strong></br>", "explain": "<ul><li>인텔 코어i3-10세대 10100F 코멧레이크S</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS PRIME H410M-K</li><il>ASUS PH 지포스 GTX 1650 O4G D5 4GB</il><br><il>SSD:마이크론 Crucial MX500 대원CTS (250GB) <br> HDD:(WD) 1TB BLUE WD10EZEX SATA3/7200/64M /HDD</il></ul>", "img": "lion.jpg"},
-            "DEH": {"work": "다른 것보다 컴퓨터 용량에 가장 신경을 많이 쓰시는 분께 추천합니다. <br><strong>써도 써도 끝이 없다! 하드디스크 남아도는 데스크탑!</strong></br>", "explain": "<ul><li>인텔 코어i5-10세대 10400F 코멧레이크S</li><li>삼성전자 DDR4-3200 (16GB) PC4-25600</li><li>ASUS PRIME H410M-K</li><il>MSI 지포스 GTX 1650 벤투스 S V1 OC D6 4GB</il><br><il>SSD:마이크론 Crucial MX500 대원CTS (1TB) <br> HDD:Seagate 2TB BarraCuda ST2000DM008", "img": "lion.jpg"},
-            "DFH": {"work": "최신 사양, 최신 그래픽. 완전한 데스크탑을 원하시는 분께 추천합니다. <br><strong>안 돌아가는 게임과 프로그램 같은건 없다. 데스크탑 FLEX!</strong></br>", "explain": "<ul><li>AMD 라이젠9-4세대 버미어 5900X</li><li>G.SKILL DDR4 32G PC4-32000 CL19 TRIDENT Z RGB (16Gx2)</li><li>ASUS PRIME X570-P/CSM 대원CTS</li><il>MSI 지포스 RTX 3080 게이밍 X 트리오 D6X 10GB</il><br><il>SSD:삼성전자 970 EVO Plus M.2 2280 (500GB) <br> HDD : Seagate 3TB Barracuda ST3000DM007</il></ul>", "img": "lion.jpg"}
+            "CEG": {"work": "가벼운 문서 작업을 원하시는 분께 추천합니다. <br><strong>문서작업에 최적화 된 가성비 사무용 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠3-2세대 피카소 3200G</li><li>삼성전자 DDR4-3200 (8GB) PC4-25600</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>내장 기본 VGA</il><br><il>마이크론 Crucial MX500 대원CTS (250GB)</il></ul>", "img": "lion.jpg", "href":"http://compury.co.kr/shop/estimate_copy.php?eid=122423441-1794236236"},
+            "CFG": {"work": "전문 프로그램이 돌아가는 가성비 좋은 데스크탑을 원하시는 분께 추천합니다. <br><strong>무거운 프로그램에도 끄떡 없는 비즈니스 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠5-3세대 마티스 3600</li><li>삼성전자 DDR4-3200 (8GB) PC4-25600 *2</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>ASUS CERBERUS 지포스 GTX1050 Ti O4G D5 4GB</il><br><il>마이크론 Crucial P5 M.2 NVMe 아스크텍 (500GB)</il></ul>", "img": "lion.jpg", "href":"http://compury.co.kr/shop/estimate_copy.php?eid=122423441-2399910930"},
+            "CEH": {"work": "가성비 챙겨! 성능 챙겨! 가성비 게이밍 데스크탑을 원하신는 분께 추천합니다.<br><strong>낮은 가격대에도 게임이 잘 돌아가는 게이밍용 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠 5-3세대 3500</li><li>삼성전자 DDR4-2666 (16GB) PC4-21300</li><li>ASUS PRIME A320M-K 대원CTS</li><il>MSI 지포스 GTX 1650 벤투스 S V1 OC D6 4GB</il><br><il>마이크론 Crucial MX500 대원CTS (500GB)</il></ul>", "img": "lion.jpg", "href":"http://compury.co.kr/shop/estimate_copy.php?eid=122423441-2336675327"},
+            "CFH": {"work": "적은 가격으로 원하는 성능만 확실히 챙겨가자! 주어진 예산에서 좋은 사양을 원하시는 분께 추천합니다. <br><strong>이 가격에 이 사양 이정도면 나쁘지 않아, 아니 오히려 좋아 못하는 게 없는 가성비 데스크탑!</br></stronng>", "explain": "<ul><li>AMD 라이젠5-3세대 3500</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS EX A320M-GAMING 대원CTS</li><il>ASUS CERBERUS 지포스 GTX1050 Ti O4G D5 4GB</il><br><il>WD BLUE 3D SSD 250GB</il></ul>", "img": "lion.jpg", "href":"http://compury.co.kr/shop/estimate_copy.php?eid=122423441-2454745285"},
+            "DEG": {"work": "가격 상관 없이 가볍게 쓰기 좋은, 사무 작업을 원하시는 분께 추천합니다. <br><strong>회사 돈으로 맞추기에 딱인 비싸고 가벼운 데스크탑!</strong></br>", "explain": "<ul><li>AMD 라이젠5-3세대 마티스 3600</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS PRIME H510M-K</li><il>내장 기본 VGA</il><br><il>마이크론 Crucial MX500 대원CTS (500GB)</il></ul>", "img": "lion.jpg", "href":"http://compury.co.kr/shop/estimate_copy.php?eid=144224051-1858975559"},
+            "DFG": {"work": "고사양의 작업을 원하거나, 고사양의 게임을 원하시는 분께 추천합니다. <br><strong>CS6, AL 작업? 배틀그라운드? 최고사양으로 즐겨주지, 그래픽 쩌는 데스크탑!</strong></br>", "explain": "<ul><li>인텔 코어i3-10세대 10100F 코멧레이크S</li><li>삼성전자 DDR4-3200 (8GB) *2</li><li>ASUS PRIME H410M-K</li><il>ASUS PH 지포스 GTX 1650 O4G D5 4GB</il><br><il>SSD:마이크론 Crucial MX500 대원CTS (250GB) <br> HDD:(WD) 1TB BLUE WD10EZEX SATA3/7200/64M /HDD</il></ul>", "img": "lion.jpg", "href":"http://compury.co.kr/shop/estimate_copy.php?eid=144224051-1782168336"},
+            "DEH": {"work": "다른 것보다 컴퓨터 용량에 가장 신경을 많이 쓰시는 분께 추천합니다. <br><strong>써도 써도 끝이 없다! 하드디스크 남아도는 데스크탑!</strong></br>", "explain": "<ul><li>인텔 코어i5-10세대 10400F 코멧레이크S</li><li>삼성전자 DDR4-3200 (16GB) PC4-25600</li><li>ASUS PRIME H410M-K</li><il>MSI 지포스 GTX 1650 벤투스 S V1 OC D6 4GB</il><br><il>SSD:마이크론 Crucial MX500 대원CTS (1TB) <br> HDD:Seagate 2TB BarraCuda ST2000DM008", "img": "lion.jpg", "href":"http://compury.co.kr/shop/estimate_copy.php?eid=144224051-1799034429"},
+            "DFH": {"work": "최신 사양, 최신 그래픽. 완전한 데스크탑을 원하시는 분께 추천합니다. <br><strong>안 돌아가는 게임과 프로그램 같은건 없다. 데스크탑 FLEX!</strong></br>", "explain": "<ul><li>AMD 라이젠9-4세대 버미어 5900X</li><li>G.SKILL DDR4 32G PC4-32000 CL19 TRIDENT Z RGB (16Gx2)</li><li>ASUS PRIME X570-P/CSM 대원CTS</li><il>MSI 지포스 RTX 3080 게이밍 X 트리오 D6X 10GB</il><br><il>SSD:삼성전자 970 EVO Plus M.2 2280 (500GB) <br> HDD : Seagate 3TB Barracuda ST3000DM007</il></ul>", "img": "lion.jpg", "href":"http://compury.co.kr/shop/estimate_copy.php?eid=144224051-1990317083"}
         }
         // <br><strong></strong></br>
 
@@ -92,6 +93,9 @@
                 $("#img").attr("src",result[mbti]["img"]);
                 $("#work").html(result[mbti]["work"]);
                 $("#explain").html(result[mbti]["explain"]);
+                $("#a").click(function(){
+                    $("a").attr("href",result[mbti]["href"]);
+                });
             } else {
                 $(".progress-bar").attr('style','width: calc(100/9*'+num+'%)');
                 $("#title").html(q[num]["title"]);

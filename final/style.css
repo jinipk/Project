@@ -1,4 +1,6 @@
 /* 전체 */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
 body {
   background-color: #1f1f1f;
   color: #ffffff;
@@ -19,6 +21,7 @@ ul {
   padding-left: 0px;
   font-size: 20px;
 }
+a:link{ text-decoration: none; }
 
 /* 시작화면 */
 
@@ -88,23 +91,23 @@ ul {
 .btn-answer:focus {
   background-color: #1f1f1f;
   border: #1f1f1f;
-  width: 288px;
-  height: 120px;
+  width: 400px;
+  height: 130px;
   margin: 0 auto;
   font-size: 14px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   color: #ffffff;
 }
 .btn-answer:hover {
   background-color: #0f4c81 !important;
   border: #1f1f1f !important;
-  width: 288px;
-  height: 120px;
+  width: 400px;
+  height: 130px;
   margin: 0 auto;
   font-size: 14px;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   color: #ffffff;
 }
 .progress-bar {
@@ -126,13 +129,13 @@ ul {
   color: #5CD1E5;
 }
 .rectangle {
-  width: 288px;
+  width: 400px;
   height: 8px;
   background-color: #383a43;
   margin: 0 auto;
 }
 .mid-rectangle {
-  width: 288px;
+  width: 400px;
   height: 1px;
   background-color: #383a43;
   margin: 0 auto;
